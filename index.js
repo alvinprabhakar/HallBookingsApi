@@ -18,4 +18,4 @@ app.use((req,res,next) => {
 
 app.use('/api',apiRoutes)
 
-app.listen(port,() => console.log(`server running at port ${port}`));
+app.listen(process.env.PORT || port);
